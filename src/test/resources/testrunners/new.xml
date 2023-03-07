@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite" parallel="methods" thread-count="3">
+	<test name="MyTest" parallel="methods" thread-count="3">
+		<classes>
+			<class name="mytests.MyTestClass">
+
+				<methods>
+					<include name="titleTest" />
+					<include name="searchExistTest" />
+					<include name="isHelpExistTest" />
+				</methods>
+
+			</class>
+
+		</classes>
+	</test>
+</suite>
