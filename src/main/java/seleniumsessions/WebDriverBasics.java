@@ -2,6 +2,7 @@ package seleniumsessions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -20,7 +21,8 @@ public class WebDriverBasics {
 
 		// cross browser logic
 		if (browser.equals("chrome")) {
-			driver = new ChromeDriver();
+			ChromeOptions co = new ChromeOptions();
+			driver = new ChromeDriver(co);
 		} else if (browser.equals("firefox")) {
 			driver = new FirefoxDriver();
 		} else if (browser.equals("safari")) {

@@ -39,7 +39,7 @@ public class SVGElement {
 
 		System.out.println(statesList.size());
 		Actions act = new Actions(driver);
-
+		
 		for (WebElement e : statesList) {
 
 			String stateName = e.getAttribute("name");
@@ -51,6 +51,7 @@ public class SVGElement {
 				if (state.equals("Florida")) {
 					//jsUtil.scrollIntoView(e);
 					act.scrollToElement(e).build().perform();
+					
 
 					int x = e.getSize().getWidth();
 					int y = e.getSize().getHeight();
