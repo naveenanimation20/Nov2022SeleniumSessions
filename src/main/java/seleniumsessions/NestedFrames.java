@@ -9,7 +9,7 @@ public class NestedFrames {
 	public static void main(String[] args) {
 
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://selectorshub.com/xpath-practice-page/");
+		driver.get("https://selectorshub.com/iframe-scenario/");
 		
 		driver.switchTo().frame("pact1");
 		driver.findElement(By.id("inp_val")).sendKeys("crush1");

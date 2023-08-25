@@ -20,8 +20,8 @@ public class WebTablePagination {
 		//multi selection:
 		while(true) {
 			
-			if(driver.findElements(By.xpath("//td[text()='United States']")).size() > 0) {
-				selectMultipleCountry("United States");
+			if(driver.findElements(By.xpath("//td[text()='India']")).size() > 0) {
+				selectMultipleCountry("India");
 			}
 			
 			//pagination logic:

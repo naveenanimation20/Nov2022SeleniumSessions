@@ -23,20 +23,28 @@ public class ZoomConcept {
 //		js.executeScript(zoomFirefox);
 		
 		//zoomFirefox("0.5");
-		zoomChrome("300.0");
+		zoomChromeEdge("300.0");
 		
 		
         
 	}
 
 	
-	public static void zoomChrome(String zoomPercentage) {
+	/**
+	 * example: "document.body.style.zoom = '400.0%'"
+	 * @param zoomPercentage
+	 */
+	public static void zoomChromeEdge(String zoomPercentage) {
 		String zoom = "document.body.style.zoom = '"+zoomPercentage+"%'";
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript(zoom);
 
 	}
 	
+	/**
+	 * example: "document.body.style.MozTransform = 'scale(0.5)'; ";
+	 * @param zoomPercentage
+	 */
 	public static void zoomFirefox(String zoomPercentage) {
 		String zoom = "document.body.style.MozTransform = 'scale("+zoomPercentage+")'";
 		JavascriptExecutor js = (JavascriptExecutor)driver;

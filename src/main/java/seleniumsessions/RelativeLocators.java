@@ -15,7 +15,7 @@ public class RelativeLocators {
 		
 		WebElement ele = driver.findElement(By.xpath("//span[text()='Rahul Tripathi']"));
 		
-		String wk = driver.findElement(with(By.className("ds-cursor-pointer")).toRightOf(ele)).getText();
+		String wk = driver.findElement(with(By.cssSelector(".ds-flex.ds-cursor-pointer.ds-items-center")).toRightOf(ele)).getText();
 		System.out.println(wk);
 		
 

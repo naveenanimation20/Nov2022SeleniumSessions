@@ -14,6 +14,7 @@ public class DragAndDropConcpet {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://jqueryui.com/resources/demos/droppable/default.html");
 
+
 		WebElement srcEle = driver.findElement(By.id("draggable"));
 		WebElement targetEle = driver.findElement(By.id("droppable"));
 		

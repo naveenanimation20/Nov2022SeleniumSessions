@@ -22,6 +22,13 @@ public class ShadowDOMConcept {
 		
 		pizza.sendKeys("veg pizza");
 		
+		
+		//
+		driver.get("chrome://settings/");
+		WebElement search  = (WebElement)js.executeScript("return document.querySelector(\"body > settings-ui\").shadowRoot.querySelector(\"#toolbar\").shadowRoot.querySelector(\"#search\").shadowRoot.querySelector(\"#searchInput\")");
+		search.sendKeys("notification");
+		
+		
 	}
 
 }

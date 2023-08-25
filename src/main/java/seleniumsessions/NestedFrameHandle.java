@@ -21,7 +21,7 @@ public class NestedFrameHandle {
 			.switchTo().frame("pact2")
 					.findElement(By.id("jex"))
 						.sendKeys("PQR");;//f2
-		//driver.findElement(By.id("jex")).sendKeys("PQR");
+		//driver.findElement(By.id("jex")).sendKeys("PQR"); //another way
 
 		
 		
@@ -31,20 +31,22 @@ public class NestedFrameHandle {
 //		driver.switchTo().frame("pact2");
 //		driver.findElement(By.id("jex")).sendKeys("PQR");
 //		
-//		driver.switchTo().parentFrame();//sel 4.x -- f1
-//		driver.findElement(By.id("inp_val")).sendKeys("ABC--new");
+		driver.switchTo().parentFrame();//sel 4.x -- f1
+		driver.findElement(By.id("inp_val")).sendKeys("ABC--new");
 //
 //		
-//		driver.switchTo().frame("pact2");//f2
-//		driver.switchTo().frame("pact3");//f3
-//		driver.findElement(By.id("glaf")).sendKeys("Naveen");
+		driver.switchTo().frame("pact2");//f2
+		driver.switchTo().frame("pact3");//f3
+		driver.findElement(By.id("glaf")).sendKeys("Naveen");
 //		
-//		driver.switchTo().parentFrame();//sel 4.x -- f2
-//		driver.switchTo().parentFrame();//sel 4.x -- f1
-//		//driver.switchTo().defaultContent();//page
-//		driver.findElement(By.id("inp_val")).sendKeys("ABC---456");
+		driver.switchTo().parentFrame();//sel 4.x -- f2
+		driver.switchTo().parentFrame();//sel 4.x -- f1
+		//driver.switchTo().defaultContent();//page
+		driver.findElement(By.id("inp_val")).sendKeys("ABC---456");
 //		
-//		driver.switchTo().defaultContent();
+		driver.switchTo().defaultContent();
+		String header = driver.findElement(By.cssSelector("h1.elementor-heading-title")).getText();
+		System.out.println(header);
 
 
 	}

@@ -23,10 +23,6 @@ public class AmazonTestWithBM {
 		driver.get("https://www.amazon.com");
 	}
 
-	// tcs should be independent
-	//AAA Rule
-	//AAA stands for: Arrange, Act, Assert
-	//1 tc --> 1 assert
 	@Test(priority = 1)
 	public void titleTest() {
 		String title = driver.getTitle();

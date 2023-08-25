@@ -113,11 +113,7 @@ public class CustomCSSSelector {
 		
 		
 		//child to parent: backward traversing -- not available
-		
-//		Exception in thread "main" org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed.
-//		  (unknown error: DevToolsActivePort file doesn't exist)
-//		  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-						
+					
 		
 		//or - comma in css:
 		// input#username,button#loginBtn,input#password,button#ssoBtn -- 4
